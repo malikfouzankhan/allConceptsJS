@@ -79,14 +79,15 @@
     console.log(typeof f1); // prints the datatype of the identifier
 
 // 8. String operators
+    // '+'/concatenation operator
     let g1 = "String";
     let g2 = "operators";
     console.log("'+' operator : g1 + g2", g1 + g2);
-    let g3 = {
-      name: "MFK",
-    };
-    console.log("name" in g3);
-
+    // append operator
+    let g3 = "Malik";
+    g3 += "Fouzan"; // append operator
+    console.log(g3);
+    
 // 9. Nulling Coalescing & Optional Chaining
     // Nulling Coalescing : It returns the right-hand value only when the left-hand value is null or undefined.
     let h1 = null;
@@ -113,6 +114,6 @@
       return nums.reduce((a, b) => a + b);
     }
     console.log(sum(1, 2, 3, 4)); // 10 ✅ Rest in object destructuring
-    
+
     let { name, ...details } = { name: "Fouzan", age: 21, city: "Hyderabad" };
     console.log(details); // { age: 21, city: "Hyderabad" }
